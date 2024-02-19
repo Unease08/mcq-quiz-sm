@@ -1,0 +1,59 @@
+.sidebar {
+  background-color: #08316f;
+  color: white;
+  width: 200px;
+  padding: 20px;
+  height: 100vh; // Set Sidebar height to full viewport height
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed; // Fixed position to keep it in view while scrolling
+  left: 0; // Position it to the left
+
+  .logo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .logo-title {
+      margin-right: 10px;
+    }
+
+    .sm-logo {
+      width: 2px;
+      height: 2px;
+    }
+  }
+
+  .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+
+    .menu-item {
+      display: flex;
+      gap: 20px;
+      padding: 10px;
+      cursor: pointer;
+
+      span {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .icons {
+        font-size: 24px;
+      }
+    }
+  }
+}
