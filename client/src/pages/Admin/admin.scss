@@ -1,7 +1,7 @@
 .adminDashboard {
   display: flex;
   flex-direction: column;
-  height: 150vh;
+  height: 165vh;
   background-color: lightgrey;
 
   .contentBox {
@@ -18,17 +18,15 @@
 
       .box {
         background-color: white;
-        padding: 20px;
-        width: 200px;
+        padding: 10px;
         height: 90px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
       .boxText {
         display: flex;
-        justify-content: center;
         gap: 10px;
-
+        justify-content: center;
         .logo {
           font-size: 28px;
         }
@@ -37,13 +35,15 @@
           font-size: 20px;
 
           h3 {
-            font-size: 20px;
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: 600;
           }
         }
       }
       p {
-        font-weight: 500;
-        margin-left: 90px;
+        font-weight: 600;
+        margin-left: 80px;
       }
     }
   }
@@ -59,7 +59,7 @@
       background-color: white;
       padding: 20px;
       width: auto;
-      height: 350px;
+      height: 400px;
       border-radius: 8px;
 
       .chartBox1 {
@@ -69,8 +69,8 @@
         grid-column: 1;
       }
       .chartBox3 {
-        grid-column: 1;
-        font-size: 24px;
+        grid-column: 2;
+        font-size: 18px;
       }
     }
   }

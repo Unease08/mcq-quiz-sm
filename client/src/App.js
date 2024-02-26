@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./components/Home/Home";
-import Login from "./components/login/Login";
+import Login1 from "./components/login/Login1";
 import Admin from "./pages/Admin/Admin";
 import {
   createBrowserRouter,
@@ -15,7 +15,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<Login />}></Route>
+        <Route path="/login" element={<Login1 />}></Route>
         <Route path="/" element={<Home />}></Route>
         <Route path="/admin" element={<Admin />}></Route>
       </Routes>

@@ -74,9 +74,6 @@ const Admin = () => {
               </div>
               <p>200</p>
             </div>
-            {/* Additional Boxes */}
-
-            {/* End of Additional Boxes */}
           </div>
           <div className="chartContent">
             <div className="chart">

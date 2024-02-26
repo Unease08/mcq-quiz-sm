@@ -38,6 +38,7 @@ const Login = () => {
           navigate("/admin");
           alert("login successful");
         } else {
+          console.log(res);
           alert("Login failed");
         }
       } catch (error) {
