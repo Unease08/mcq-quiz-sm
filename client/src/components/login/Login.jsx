@@ -1,9 +1,8 @@
 import React, { useState } from "react";
+import sm from "../../assets/sm.png";
+import "./Login.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import softmind from "../../assets/sm.png";
-import collegeLogo from "../../assets/clz-logo.png";
-import "./login.scss";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -34,7 +33,7 @@ const Login = () => {
           password: password,
         });
 
-        if (res.data === "Success") {
+        if (res.status === 200 && res.data === "Success") {
           navigate("/admin");
           alert("login successful");
         } else {
@@ -48,56 +47,47 @@ const Login = () => {
   };
 
   return (
-    <div className="login">
+    <div className="login-form-container">
       <div className="login-left">
-        <div className="login-title">
-          <h1> Quiz Management System</h1>
-        </div>
-
-        <div className="college-logo">
-          <img src={collegeLogo} alt="" />
-        </div>
-        <div className="footer-logo">
-          <div className="logo-title">
-            <h2>Powered by</h2>
-          </div>
-          <div className="logo">
-            <img src={softmind} height="50px" alt="" />
-          </div>
-        </div>
+        <img src={sm} alt="" />
       </div>
-      <div className="login-right">
-        <form onSubmit={handleSubmit} className="form">
-          <span>Welcome Admin</span>
-          <label htmlFor="Username">Username</label> <br />
-          <input
-            type="text"
-            name="username"
-            placeholder="Enter Username"
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          {error && username.length === 0 ? (
-            <label className="error-msg">Username cannot be empty</label>
-          ) : (
-            ""
-          )}
-          <br />
-          <label htmlFor="Password">Password</label>
-          <br />
-          <input
-            type="password"
-            name="password"
-            placeholder="Enter password"
-            onChange={handlePasswordChange}
-          />
-          {error && passwordError ? (
-            <label className="error-msg">
-              Should not be less that 3 characters
-            </label>
-          ) : (
-            ""
-          )}
-          <br />
+      <div className="form-container">
+        <div className="greeting">
+          <h1>Hello, again</h1>
+          <p>We are happy to have you back</p>
+        </div>
+        <form onSubmit={handleSubmit}>
+          <label>
+            <input
+              type="text"
+              name="username"
+              value={username}
+              placeholder="Username"
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            {error && username.length === 0 ? (
+              <label className="error-msg">Username cannot be empty</label>
+            ) : (
+              ""
+            )}
+          </label>
+          <label>
+            <input
+              type="password"
+              name="password"
+              value={password}
+              placeholder="Password"
+              onChange={handlePasswordChange}
+            />
+            {error && passwordError ? (
+              <label className="error-msg">
+                Should not be less that 3 characters
+              </label>
+            ) : (
+              ""
+            )}
+          </label>
+          <p className="forgot">Forgot password?</p>
           <button type="submit">Login</button>
         </form>
       </div>
