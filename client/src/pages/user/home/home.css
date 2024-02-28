@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: lightgrey;
+} */
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.curves {
+  position: relative;
+  text-align: center;
+  color: black;
+}
