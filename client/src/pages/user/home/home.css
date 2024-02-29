@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-/* body {
-  background-color: lightgrey;
-} */
+body {
+  background-color: white;
+}
 
 .logo img {
   width: 60px;
@@ -42,5 +42,138 @@
 .curves {
   position: relative;
   text-align: center;
+}
+
+.home-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.home-greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-main .home-greeting h1 {
+  font-weight: 700;
+  color: purple;
+  font-size: 32px;
+}
+
+.home-main .home-greeting p {
   color: black;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* Existing styles remain unchanged */
+
+.subjects {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 80px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  gap: 20px;
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+.box1 {
+  background-color: #5a50ff;
+}
+
+.box1 .box-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.box .box-title span {
+  margin-top: 50px;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.box-title .submit {
+  padding: 3px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.box2 {
+  background-color: #ea69af;
+}
+
+.box2 .box-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.box3 {
+  background-color: #eeb06a;
+}
+
+.box3 .box-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.box4 {
+  background-color: #73f3eb;
+}
+
+.box4 .box-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.box5 {
+  background-color: #4e8aff;
+}
+
+.box5 .box-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.user-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.user-footer span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-footer img {
+  width: 48px;
+  height: 48px;
 }

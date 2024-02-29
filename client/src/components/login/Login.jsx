@@ -88,7 +88,9 @@ const Login = () => {
             )}
           </label>
           <p className="forgot">Forgot password?</p>
-          <button type="submit">Login</button>
+          <button className="login" type="submit">
+            Login
+          </button>
         </form>
       </div>
     </div>
