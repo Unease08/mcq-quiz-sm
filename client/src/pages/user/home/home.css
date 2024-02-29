@@ -75,7 +75,8 @@ body {
 
 .subjects {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
   margin-top: 20px;
   padding: 20px 80px;
@@ -90,32 +91,11 @@ body {
 }
 
 .box1 {
-  background-color: #5a50ff;
-}
-
-.box1 .box-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50%;
-}
-
-.box .box-title span {
-  margin-top: 50px;
-  font-weight: 800;
-  font-size: 24px;
-}
-
-.box-title .submit {
-  padding: 3px;
-  border: 1px solid white;
-  border-radius: 5px;
-  margin-top: 30px;
+  background-color: lightgrey;
 }
 
 .box2 {
-  background-color: #ea69af;
+  background-color: #5a50ff;
 }
 
 .box2 .box-title {
@@ -126,46 +106,11 @@ body {
   height: 50%;
 }
 
-.box3 {
-  background-color: #eeb06a;
-}
-
-.box3 .box-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50%;
-}
-.box4 {
-  background-color: #73f3eb;
-}
-
-.box4 .box-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50%;
-}
-.box5 {
-  background-color: #4e8aff;
-}
-
-.box5 .box-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50%;
-}
-
 .user-footer {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
-  margin-left: 20px;
+  justify-content: center;
+  margin-top: 70px;
 }
 
 .user-footer span {
