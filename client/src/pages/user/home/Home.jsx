@@ -40,7 +40,6 @@ const Home = () => {
       <div className="subjects">
         <div className="box box1">
           <span className="exam-schedule">Exam schedule</span>
-
           <div className="schedule">
             <div className="schedule-subject">
               <span className="schedule-subject-heading">Subject</span>
@@ -81,7 +80,53 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="box box3"></div>
+        <div className="box box3">
+          <div className="box3-heading">
+            <div className="current-standing">
+              <span className="current-standing-title">Current Standing </span>
+            </div>
+            <div className="view-all">
+              <span className="view-all-title">View All</span>
+            </div>
+          </div>
+          <div className="box3-heading-subheading">
+            <div className="subheading-title">
+              <span>Position</span>
+              <div className="subheading-title-container">
+                <span className="subheading-title-content">1</span>
+                <span className="subheading-title-content">2</span>
+                <span className="subheading-title-content">3</span>
+                <span className="subheading-title-content">4</span>
+              </div>
+            </div>
+            <div className="subheading-title">
+              <span>Name</span>
+              <div className="subheading-title-container">
+                <span className="subheading-title-content-name">
+                  Anish Shrestha
+                </span>
+                <span className="subheading-title-content-name">
+                  Nimesh Mathema
+                </span>
+                <span className="subheading-title-content-name">
+                  Saugat Nepal
+                </span>
+                <span className="subheading-title-content-name">
+                  Suman Ghimire
+                </span>
+              </div>
+            </div>
+            <div className="subheading-title">
+              <span>Points</span>
+              <div className="subheading-title-container">
+                <span className="subheading-title-content">100</span>
+                <span className="subheading-title-content">200</span>
+                <span className="subheading-title-content">300</span>
+                <span className="subheading-title-content">400</span>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* <div className="box box4">
           <div className="waves">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

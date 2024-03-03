@@ -156,6 +156,59 @@ body {
   border-radius: 5px;
 }
 
+.box3 {
+  background-color: lightgrey;
+  width: 400px;
+  height: 280px;
+}
+
+.box3 .box3-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.current-standing-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.view-all-title {
+  font-size: 14px;
+  color: blue;
+  font-weight: 400;
+}
+
+.box3-heading-subheading {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.box3-heading-subheading .subheading-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.subheading-title-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 5px;
+}
+
+.subheading-title-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.subheading-title-content-name {
+  font-weight: 400;
+  font-size: 16px;
+}
+
 .user-footer {
   display: flex;
   align-items: center;
