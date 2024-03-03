@@ -92,6 +92,43 @@ body {
 
 .box1 {
   background-color: lightgrey;
+  height: 280px;
+  width: 300px;
+}
+
+.box1 .exam-schedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+}
+
+.schedule {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.schedule-subject-heading {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.schedule-subject-title-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.schedule-subject-title {
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .box2 {
@@ -103,7 +140,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  font-weight: 700;
+  gap: 40px;
+}
+
+.box-title-heading {
+  font-size: 24px;
+}
+
+.submit {
+  border: 1px solid white;
+  outline: none;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 5px;
 }
 
 .user-footer {
