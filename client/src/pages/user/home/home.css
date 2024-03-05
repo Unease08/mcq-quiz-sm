@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -78,7 +79,6 @@ body {
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  margin-top: 20px;
   padding: 20px 80px;
 }
 
@@ -109,8 +109,6 @@ body {
 .schedule {
   display: flex;
   justify-content: space-around;
-  padding: 5px;
-  margin-top: 10px;
 }
 
 .schedule-subject-heading {
@@ -159,7 +157,7 @@ body {
 .box3 {
   background-color: lightgrey;
   width: 400px;
-  height: 280px;
+  height: 250px;
 }
 
 .box3 .box3-heading {
@@ -209,11 +207,17 @@ body {
   font-size: 16px;
 }
 
+.subheading-title-content-name .profile-picture {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
 .user-footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 .user-footer span {
@@ -224,4 +228,119 @@ body {
 .user-footer img {
   width: 48px;
   height: 48px;
+}
+
+.model {
+  position: fixed;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: white;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 17px;
+  width: 320px;
+  height: 500px;
+}
+
+.model-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.model-container .model-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.model-container .model-btn {
+  border: none;
+  background-color: white;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.model-sub-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.model-sub-container .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: 1px solid #0d1f40;
+  border-radius: 50%;
+}
+
+.model-sub-container-content .question-no {
+  font-weight: 700;
+}
+
+.model-sub-container-content .question-type {
+  font-size: 14px;
+  color: black;
+}
+
+.underline {
+  border: 1px solid black;
+}
+
+.before {
+  margin-left: 30px;
+}
+
+.rules-container {
+  width: 318px;
+  height: 250px;
+}
+
+.rules ul {
+  margin-top: 10px;
+}
+
+.rules ul li {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.rules-below {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rules .exam-deadline {
+  align-items: center;
+  font-weight: 600;
+  color: green;
+}
+
+.rules .best {
+  font-family: "Inter", sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.rules .exam-start-btn {
+  background-color: white;
+  border: 1px solid #0d1f40;
+  font-weight: 700;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.rules .exam-start-btn:hover {
+  background-color: #0d1f40;
+  color: white;
 }
