@@ -53,19 +53,19 @@ p {
   color: purple;
 }
 
-form {
+.login-form {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-form label {
+.login-form .login-field {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-input {
+.login-input-field {
   padding: 5px 10px;
   margin-top: 15px;
   border: 1px solid rgb(229, 146, 229);
@@ -95,7 +95,7 @@ input {
   font-size: 14px;
 }
 
-.error-msg {
+.login-field .error-msg {
   color: red;
   margin-top: 10px;
   font-size: 14px;

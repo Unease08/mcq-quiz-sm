@@ -56,23 +56,25 @@ const Login = () => {
           <h1>Hello, again</h1>
           <p>We are happy to have you back</p>
         </div>
-        <form onSubmit={handleSubmit}>
-          <label>
+        <form className="login-form" onSubmit={handleSubmit}>
+          <label className="login-field">
             <input
+              className="login-input-field"
               type="text"
               name="username"
               value={username}
               placeholder="Username"
               onChange={(e) => setUsername(e.target.value)}
             />
-            {error && username.length === 0 ? (
-              <label className="error-msg">Username cannot be empty</label>
+            {error && passwordError ? (
+              <label className="error-msg">Username can't be empty</label>
             ) : (
               ""
             )}
           </label>
-          <label>
+          <label className="login-field">
             <input
+              className="login-input-field"
               type="password"
               name="password"
               value={password}
@@ -80,9 +82,7 @@ const Login = () => {
               onChange={handlePasswordChange}
             />
             {error && passwordError ? (
-              <label className="error-msg">
-                Should not be less that 3 characters
-              </label>
+              <label className="error-msg">More than 3 characters</label>
             ) : (
               ""
             )}
