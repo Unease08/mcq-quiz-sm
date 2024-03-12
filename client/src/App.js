@@ -2,6 +2,8 @@ import "./App.css";
 import Home from "./components/Home/Home";
 import Login from "./components/login/Login";
 import Admin from "./pages/Admin/Admin";
+import Class from "./pages/Admin/class/Class";
+import Faculty from "./pages/Admin/faculty/Faculty";
 import Setup from "./pages/Admin/setup/Setup";
 import Homepage from "./pages/user/home/Home";
 import {
@@ -22,6 +24,8 @@ const App = () => {
         <Route path="/admin" element={<Admin />}></Route>
         <Route path="/homepage" element={<Homepage />}></Route>
         <Route path="/setup" element={<Setup />}></Route>
+        <Route path="/class" element={<Class />}></Route>
+        <Route path="/faculty" element={<Faculty />}></Route>
       </Routes>
     </BrowserRouter>
   );
