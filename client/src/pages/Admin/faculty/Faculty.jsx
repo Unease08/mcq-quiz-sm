@@ -43,10 +43,19 @@ const Faculty = () => {
       <Sidebar />
       <Navbar />
       <div className="faculty-container">
-        <div className="addFaculty-btn">
-          <button className="add-btn" onClick={handleAddFaculty}>
-            Add Faculty
-          </button>
+        <div className="addFaculty-container">
+          <div className="search-box">
+            <input
+              type="search"
+              placeholder="Search"
+              className="search-field"
+            />
+          </div>
+          <div className="addFaculty-btn">
+            <button className="add-btn" onClick={handleAddFaculty}>
+              Add Faculty
+            </button>
+          </div>
         </div>
         <div className="faculty-table-container">
           <table className="faculty-table">

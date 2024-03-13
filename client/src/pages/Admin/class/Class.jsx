@@ -21,7 +21,7 @@ const AddClassModal = ({ closeAddClassModal }) => {
         />
         <select required className="addClass-input-field">
           <option className="placeholder" selected disabled value="">
-            Enter faculty
+            Select faculty
           </option>
           <option value="science">Science</option>
           <option value="management">Management</option>
@@ -50,10 +50,19 @@ const Class = () => {
       <Sidebar />
       <Navbar />
       <div className="class-container">
-        <div className="addClass-btn">
-          <button className="add-btn" onClick={handleAddClass}>
-            Add class
-          </button>
+        <div className="addClass-container">
+          <div className="search-box">
+            <input
+              type="search"
+              placeholder="Search"
+              className="search-field"
+            />
+          </div>
+          <div className="addClass-btn">
+            <button className="add-btn" onClick={handleAddClass}>
+              Add class
+            </button>
+          </div>
         </div>
         <div className="class-table-container">
           <table className="class-table">

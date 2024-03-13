@@ -7,10 +7,24 @@
   margin-left: 280px;
 }
 
-.addClass-btn {
+.addClass-container {
   display: flex;
+  gap: 15px;
   justify-content: end;
+  align-items: center;
   margin: 10px 10px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.search-field {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white !important;
+  border: none;
 }
 
 .add-btn {
@@ -54,8 +68,9 @@ td {
 td .active-btn {
   background-color: #34973e;
   color: white;
-  padding: 5px;
-  border-radius: 15px;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
 td .action-icons {
@@ -106,6 +121,10 @@ td .action-icons {
   padding: 8px;
   border-radius: 5px !important;
   color: black;
+  border: none;
+}
+select {
+  background: url(https://e7.pngegg.com/pngimages/325/32/png-clipart-arrow-down-android-down-arrow-hand-desktop-wallpaper-thumbnail.png);
 }
 
 ::placeholder {
@@ -114,4 +133,29 @@ td .action-icons {
 
 select > .placeholder {
   display: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg)
+    no-repeat 50% 50%;
+  background-size: contain;
+  opacity: 0;
+  pointer-events: none;
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button {
+  opacity: 0.3;
+  pointer-events: all;
+}
+
+input[type="search"].dark::-webkit-search-cancel-button {
+  filter: invert(1);
+}
+
+select {
+  -webkit-appearance: listbox;
 }
