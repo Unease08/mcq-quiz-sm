@@ -3,7 +3,6 @@ import "./setup.css";
 import Sidebar from "../../../components/sidebar/Sidebar";
 import Navbar from "../../../components/navbar/Navbar";
 import { FaEdit } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
 
 const EditModal = ({ closeEditModal }) => {
   return (

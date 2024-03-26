@@ -14,6 +14,7 @@ import {
   Link,
   BrowserRouter,
 } from "react-router-dom";
+import Profile from "./pages/user/profile/Profile";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/setup" element={<Setup />}></Route>
         <Route path="/class" element={<Class />}></Route>
         <Route path="/faculty" element={<Faculty />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
       </Routes>
     </BrowserRouter>
   );

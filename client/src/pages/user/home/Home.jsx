@@ -157,35 +157,35 @@ const Home = () => {
               <span>Name</span>
               <div className="subheading-title-container">
                 <span className="subheading-title-content-name">
-                  <img
+                  {/* <img
                     className="profile-picture"
                     src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                     alt=""
-                  />
+                  /> */}
                   Anish Shrestha
                 </span>
                 <span className="subheading-title-content-name">
-                  <img
+                  {/* <img
                     className="profile-picture"
                     src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                     alt=""
-                  />
+                  /> */}
                   Nimesh Mathema
                 </span>
                 <span className="subheading-title-content-name">
-                  <img
+                  {/* <img
                     className="profile-picture"
                     src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                     alt=""
-                  />
+                  /> */}
                   Saugat Nepal
                 </span>
                 <span className="subheading-title-content-name">
-                  <img
+                  {/* <img
                     className="profile-picture"
                     src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                     alt=""
-                  />
+                  /> */}
                   Suman Ghimire
                 </span>
               </div>
