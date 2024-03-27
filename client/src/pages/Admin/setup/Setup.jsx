@@ -3,8 +3,19 @@ import "./setup.css";
 import Sidebar from "../../../components/sidebar/Sidebar";
 import Navbar from "../../../components/navbar/Navbar";
 import { FaEdit } from "react-icons/fa";
+import { useForm } from "react-hook-form";
 
 const EditModal = ({ closeEditModal }) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    console.log(errors);
+  };
   return (
     <div className="edit-model">
       <div className="edit-model-container">
@@ -12,30 +23,51 @@ const EditModal = ({ closeEditModal }) => {
           X
         </button>
       </div>
-      <form className="edit-form">
+      <form className="edit-form" onSubmit={handleSubmit(onSubmit)}>
         <div className="edit-form-content">
           <label className="edit-content-title">Organization Name</label>
-          <input className="edit-content-input" type="text" />
+          <input
+            className="edit-content-input"
+            type="text"
+            name="organizationName"
+            {...register("organizationName")}
+          />
         </div>
         <div className="edit-form-content">
           <label className="edit-content-title">Principal Name</label>
-          <input className="edit-content-input" type="text" />
+          <input
+            className="edit-content-input"
+            type="text"
+            name="principalName"
+          />
         </div>
         <div className="edit-form-content">
           <label className="edit-content-title">Address</label>
-          <input className="edit-content-input" type="text" />
+          <input className="edit-content-input" type="text" name="address" />
         </div>
         <div className="edit-form-content">
           <label className="edit-content-title">Organization Stamp</label>
-          <input className="edit-content-input edit-file" type="file" />
+          <input
+            className="edit-content-input edit-file"
+            type="file"
+            name="organizationStamp"
+          />
         </div>
         <div className="edit-form-content">
           <label className="edit-content-title">Organization Logo</label>
-          <input className="edit-content-input edit-file" type="file" />
+          <input
+            className="edit-content-input edit-file"
+            type="file"
+            name="organizationLogo"
+          />
         </div>
         <div className="edit-form-content">
           <label className="edit-content-title">Principal Signature</label>
-          <input className="edit-content-input edit-file" type="file" />
+          <input
+            className="edit-content-input edit-file"
+            type="file"
+            name="PrincipalSignature"
+          />
         </div>
         <div className="edit-form-content">
           <label className="edit-content-title">Contact</label>
@@ -45,7 +77,9 @@ const EditModal = ({ closeEditModal }) => {
       </form>
       <div className="form-btn">
         <button className="cancel-btn">Cancel</button>
-        <button className="save-btn">Save Changes</button>
+        <button className="save-btn" type="submit">
+          Save Changes
+        </button>
       </div>
     </div>
   );

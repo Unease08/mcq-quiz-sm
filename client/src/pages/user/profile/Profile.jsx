@@ -4,7 +4,7 @@ import sm from "../../../assets/sm.png";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaCloudDownloadAlt } from "react-icons/fa";
-import { Form, Row, Col, FormGroup, Label, Input, Button } from "reactstrap";
+import { Form, Col, FormGroup, Input } from "reactstrap";
 
 const UpdatePhotoModel = ({ closeUpdatePhotoModel }) => {
   return (
