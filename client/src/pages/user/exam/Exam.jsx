@@ -36,12 +36,42 @@ const Exam = () => {
         { id: "d", text: "Creative Style Sheets" },
       ],
     },
+    {
+      id: 3,
+      text: "What does CSS stand for?",
+      options: [
+        { id: "a", text: "Cascading Style Sheets" },
+        { id: "b", text: "Computer Style Sheets" },
+        { id: "c", text: "Colorful Style Sheets" },
+        { id: "d", text: "Creative Style Sheets" },
+      ],
+    },
+    {
+      id: 3,
+      text: "What does CSS stand for?",
+      options: [
+        { id: "a", text: "Cascading Style Sheets" },
+        { id: "b", text: "Computer Style Sheets" },
+        { id: "c", text: "Colorful Style Sheets" },
+        { id: "d", text: "Creative Style Sheets" },
+      ],
+    },
+    {
+      id: 3,
+      text: "What does CSS stand for?",
+      options: [
+        { id: "a", text: "Cascading Style Sheets" },
+        { id: "b", text: "Computer Style Sheets" },
+        { id: "c", text: "Colorful Style Sheets" },
+        { id: "d", text: "Creative Style Sheets" },
+      ],
+    },
   ];
 
   //keep track of current question index
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   //State to keep track of remaining time
-  const [remainingTime, setRemainingTime] = useState(10); // 5 minutes in second
+  const [remainingTime, setRemainingTime] = useState(300); // 5 minutes in second
   //To track timer status
   const [timerActive, setTimerActive] = useState(true);
 
@@ -129,13 +159,14 @@ const Exam = () => {
               <div className="option-field">
                 {/* Mapping through options to render radio buttons for each question */}
                 {currentQuestion.options.map((option) => (
-                  <label key={option.id}>
+                  <label key={option.id} className="option-label">
                     <input
                       type="radio"
+                      key={option.id}
                       name={`option-${currentQuestion.id}`}
                       value={option.id}
                     />
-                    {option.text}
+                    <span className="option-text">{option.text}</span>
                   </label>
                 ))}
               </div>
