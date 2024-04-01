@@ -89,7 +89,7 @@
   outline: none;
   border-radius: 17px;
   width: 620px;
-  height: 470px;
+  height: 520px;
   border: 1px solid black;
   z-index: 999;
 }
@@ -172,4 +172,10 @@
 input[type="file"]::file-selector-button {
   display: none;
   cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
 }

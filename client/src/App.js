@@ -15,6 +15,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import Profile from "./pages/user/profile/Profile";
+import Exam from "./pages/user/exam/Exam";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/class" element={<Class />}></Route>
         <Route path="/faculty" element={<Faculty />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
+        <Route path="/exam" element={<Exam />}></Route>
       </Routes>
     </BrowserRouter>
   );
